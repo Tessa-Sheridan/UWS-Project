@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href='things.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <title>Things to do</title>
+</head>
+
+<body>
+    <header>
+        <div class="title"><a href="index.html">Travel Scotland</a></div>
+        <nav class="navbar">
+            <ul class="nav-items">
+                <li class="nav-item"><a href="index.html" class="link">HOME</a></li>
+                <li class="nav-item"><a href="places.html" class="link">PLACES TO GO</a></li>
+                <li class="nav-item"><a href="things.html" class="link">THINGS TO DO</a></li>
+                <li class="nav-item"><a href="trips.html" class="link">TRIP IDEAS</a></li>
+                <li class="nav-item"><a href="UEQ.html" class="link" target="_blank">QUESTIONNAIRE</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu">
+            <i class="bx bx-menu"></i>
+            <i class="bx bx-x"></i>
+        </div>
+    </header>
+    <main>
+
+        <div class="head-image">
+            <img src="hikebanner.jpeg">
+            <div class="main-text">
+                <h1 class="headline">Things to do</h1>
+            </div>
+        </div>
+
+        <section class="container main">
+
+            <h2 id="outdoor" class="outdoor">Outdoor Activities</h2>
+            <hr>
+            <div class="slides">
+                <div class="slide fade">
+                    <img src="hiking.jpeg">
+                    <div class="head">Hiking</div>
+                    <div class="text">Scotland is perfect for hiking, with lots of walking paths available - from easy
+                        hikes for the whole family to
+                        strenous
+                        mountain climbs. There are 282 Munros (mountains over 3000 feet) to choose from, forest
+                        walks
+                        and coastal paths.</div>
+                        <br>
+                    <div class="button">
+                        <button class="big-button"><a href="https://www.alltrails.com/scotland">See More</a></button>
+                    </div>
+                </div>
+
+                <div class="slide fade">
+                    <img src="biking.jpeg">
+                    <div class="head">Mountain Biking</div>
+                    <div class="text">Whether you're a beginner or an experienced cyclist, Scotland is one of the best
+                        places for mountain biking. From cycling trails to more rugged off-road tracks, there are plenty
+                        of beautiful landscapes for you to explore on two wheels.</div>
+                    <div class="button">
+                        <button class="big-button"><a href="https://www.trailforks.com/region/scotland/">See
+                                More</a></button>
+                    </div>
+                </div>
+
+                <div class="slide fade">
+                    <img src="watersports.jpeg">
+                    <div class="head">Watersports</div>
+                    <div class="text">Scotland has over 30,000 lakes (known as lochs), 10,000km of coastline and many
+                        rivers - making it the perfect place to enjoy watersports. You can try surfing, kayaking,
+                        paddleboarding, rafting, sailing and much more. </div>
+                        <br>
+                    <div class="button">
+                        <button class="big-button"><a
+                                href="https://www.wild-scotland.co.uk/outdoor-activities/coastal-water-activities">See
+                                More</a></button>
+                    </div>
+                </div>
+
+                <div class="slide fade">
+                    <img src="adren.jpeg">
+                    <div class="head">Adrenaline Activities </div>
+                    <div class="text"> Scotland has plenty of adventure to offer thrill-seekers - with a wide range of exciting activies like <a
+                            href="https://www.bungeejumpscotland.co.uk/">bungee jumping</a>, <a
+                            href="https://www.beyondextreme.co.uk/">paragliding</a>, <a href="https://kitesurfing.scot/">
+                                kitesurfing</a>, <a href="https://rafting.co.uk/">white water rafting</a> and <a href="https://eosm.co.uk/home">microlighting</a>, you'll find
+                        something to get your heart racing.<br><br> </div>
+                    <div class="button">
+                        <button class="big-button"><a
+                                href="https://theculturetrip.com/europe/united-kingdom/scotland/articles/15-things-adrenaline-junkies-must-do-in-scotland/">See
+                                More</a></button>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+
+        <h2 id="history" class="history">History</h2>
+        <hr>
+        <div class="history_cards">
+            <div class="historycard">
+                <img src="ancient.jpeg">
+                <div class="history_text">
+                    <h2>Ancient Ruins & Sites</h2>
+                    <p>Scotland is steeped in history and legend and has a wealth of fascinating historical sites, 
+                        some of which date back to the earliest inhabitants of the British
+                        isles. You'll find standing stones and burial cairns, Neolithic villages and prehistoric
+                        settlements, and much more!
+                    </p>
+                    <br>
+                    <button class="history-button"><a
+                            href="https://www.tripadvisor.co.uk/Attractions-g186485-Activities-c47-t2-a_sort.TRAVELER__5F__RANKED-Scotland.html">See
+                            More</a></button>
+                </div>
+            </div>
+
+            <div class="historycard">
+                <img src="castles.jpeg">
+                <div class="history_text1">
+                    <h2>Castles</h2>
+                    <p>Scotland is famous for its castles, and there are hundreds dotting the country. Varying from ruins to
+                        well-preserved
+                        fortresses, each castle has a rich history and often a scenic backdrop. You may even recognise some
+                        from films and TV shows -
+                        for example Game of Thrones, James Bond and Outlander.
+                    </p>
+                    <br>
+                    <button class="history-button"><a
+                            href="https://www.tripadvisor.co.uk/Attractions-g186485-Activities-c47-t6-a_sort.TRAVELER__5F__RANKED-Scotland.html">See
+                            More</a></button>
+                </div>
+            </div>
+
+            <div class="historycard">
+                <img src="monument.jpeg">
+                <div class="history_text2">
+                    <h2>Monuments & Landmarks</h2>
+                    <p>Scotland has many attractions showcasing it's rich and proud history. Some of the best
+                        to visit include
+                        the <a
+                            href="https://www.nts.org.uk/visit/places/glenfinnan-monument/highlights/viaduct">Glenfinnan
+                            Viaduct</a> - famous for its role in the Harry Potter films, <a
+                            href="https://www.yourstirling.com/see-do/the-wallace-monument/">The National Wallace
+                            Monument</a> - commemorating 
+                        Scottish hero William Wallace and the <a href="https://whc.unesco.org/en/list/1485/">Forth
+                            Bridge</a> - one of the world's longest railway bridges.
+                    </p>
+                    <button class="history-button"><a
+                            href="https://nomadsunveiled.com/scottish-landmarks-in-scotland/">See More</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+        <section class="wildlife">
+            <h3>Wildlife Spotting</h3>
+            <hr>
+            <p>Scotland is home to a diverse range of wildlife. Here's some animals to keep a look out for..</p>
+            <div id="carousel">
+              <div class="car_slide">
+                <p>Red Squirrels</p>
+             <img src="squirrel.jpeg" />
+              </div>
+              <div class="car_slide">
+                <p>Puffins</p>
+                <img src="puffin.jpeg" />
+              </div>
+              <div class="car_slide">
+                <p>Pine Marten</p>
+                <img src="pinemarten.jpeg" />
+              </div>
+              <div class="car_slide">
+                <p>Red Deer</p>
+                <img src="deer.jpeg" />    
+              </div>
+              <div class="car_slide">
+                <p>Grey Seals</p>
+                <img src="seal.jpeg" />
+              </div>
+              <div class="car_slide">
+                <p>Golden Eagles</p>
+                <img src="geagle.jpeg" />
+              </div>
+              <div class="car_slide">
+                <p>Otters</p>
+                <img src="otter.jpeg" />
+              </div>
+            </div>
+            <button class="wild-button"><a href="https://www.nts.org.uk/stories/7-wildlife-spots">The best places to spot wildlife</a></button>
+          </section>
+
+        <footer>
+            <div class="container footer">
+                <div class="footer-item">
+                    <h2 class="footer-title">Tessa Sheridan - University of the West of Scotland</h2>
+                    <div class="footer-items">
+                        <h3>Contact: B00410147@studentmail.uws.ac.uk</h3>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <script src="things.js"></script>
+</body>
+
+</html>

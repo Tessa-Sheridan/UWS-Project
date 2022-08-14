@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link href='index.css' rel='stylesheet'>
+  <title>Home</title>
+</head>
+
+<body>
+  <header>
+    <div class="title"><a href="index.html">Travel Scotland</a></div>
+    <nav class="navbar">
+      <ul class="nav-items">
+        <li class="nav-item"><a href="index.html" class="link">HOME</a></li>
+        <li class="nav-item"><a href="places.html" class="link">PLACES TO GO</a></li>
+        <li class="nav-item"><a href="things.html" class="link">THINGS TO DO</a></li>
+        <li class="nav-item"><a href="trips.html" class="link">TRIP IDEAS</a></li>
+        <li class="nav-item"><a href="UEQ.html" class="link" target="_blank">QUESTIONNAIRE</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu">
+      <i class="bx bx-menu"></i>
+      <i class="bx bx-x"></i>
+    </div>
+  </header>
+  <main>
+
+    <div class="videoContainer">
+      <video id="homepageVideo" autoplay loop muted>
+        <source src="BGvid.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <section class="container main">
+      <div class="main-text">
+        <h1 class="headline">WELCOME TO SCOTLAND</h1>
+        <h2 class="secondary-text">Fàilte gu Alba
+        </h2>
+      </div>
+    </section>
+
+    <section class="container highlights">
+      <h3>See what Scotland has to offer</h3>
+      <hr>
+      <div id="carousel">
+        <div class="slide">
+          <p>Islands and Coasts</p>
+          <a href="places.html#islands"><img src="beach.jpeg" /></a>
+        </div>
+        <div class="slide">
+          <p>History</p>
+          <a href="things.html#history"><img src="castle.jpeg" /></a>
+        </div>
+        <div class="slide">
+          <p>Outdoor<br> Adventures</p>
+          <a href="things.html#outdoor"><img src="scenery.jpeg" /></a>
+        </div>
+        <div class="slide">
+          <p>Scenery</p>
+          <a href="places.html#scenic"><img src="night.jpg" /></a>
+        </div>
+        <div class="slide">
+          <p>Cities and Culture</p>
+          <a href="places.html#cities"><img src="edinburgh.jpeg" /></a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="full_hr">
+
+    <section class="advice">
+      <h3>Travel Advice</h3>
+      <a href="https://www.gov.uk/uk-border-control">Entering the UK</a>
+      <a href="https://www.gov.scot/coronavirus-covid-19/">COVID-19</a>
+    </section>
+
+    <section class="weather">
+      <h3>Weather</h3>
+      <a class="weatherwidget-io" href="https://forecast7.com/en/55d95n3d19/edinburgh/" data-label_1="EDINBURGH"
+        data-label_2="WEATHER" data-font="Arial" data-icons="Climacons Animated" data-theme="weather_one">EDINBURGH
+        WEATHER</a>
+      <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+      </script>
+    </section>
+
+    <section class="playlist">
+      <h3>Get Inspired</h3>
+      <iframe class="spotify" style="border-radius:12px"
+        src="https://open.spotify.com/embed/playlist/37i9dQZF1DX1lHf6fzlf1u?utm_source=generator&theme=0" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <div class="container footer">
+      <div class="footer-item">
+        <h2 class="footer-title">Tessa Sheridan - University of the West of Scotland</h2>
+        <div class="footer-items">
+          <h3>Contact: B00410147@studentmail.uws.ac.uk</h3>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>
