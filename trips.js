@@ -3,27 +3,27 @@
 //navbar
 
 const menuToggle = document.querySelector(".mobile-menu");
-const burgerMenu = document.querySelector(".burger-menu");
-const burgerX = document.querySelector(".burger-x");
+const hambMenu = document.querySelector(".bx-menu");
+const hambX = document.querySelector(".bx-x");
 const navBar = document.querySelector(".navbar");
 
 // open
 
-burgerMenu.addEventListener("click", (e) => {
-  if (e.target.classList.contains("burger-menu")) {
+hambMenu.addEventListener("click", (e) => {
+  if (e.target.classList.contains("bx-menu")) {
     navBar.classList.add("show-navbar");
-    bxMenu.classList.add("hide-menu");
-    bxX.classList.add("show-menu");
+    hambMenu.classList.add("hide-bx");
+    hambX.classList.add("show-bx");
   }
 });
 
 // close
 
-burgerX.addEventListener("click", (e) => {
-  if (e.target.classList.contains("burger-x")) {
+hambX.addEventListener("click", (e) => {
+  if (e.target.classList.contains("bx-x")) {
     navBar.classList.remove("show-navbar");
-    bxMenu.classList.remove("hide-menu");
-    bxX.classList.remove("show-menu");
+    hambMenu.classList.remove("hide-bx");
+    hambX.classList.remove("show-bx");
   }
 });
 
@@ -38,7 +38,7 @@ function plusDivs(n) {
 
 function showDivs(n) {
   var i;
-  var x = document.getElementsByClassName("slides");
+  var x = document.getElementsByClassName("mySlides");
   if (n > x.length) {
     slideIndex = 1;
   }
@@ -60,7 +60,7 @@ function plusDivs1(n) {
 
 function showDivs1(n) {
   var i;
-  var x = document.getElementsByClassName("slides1");
+  var x = document.getElementsByClassName("mySlides1");
   if (n > x.length) {
     slideIndex1 = 1;
   }
@@ -82,7 +82,7 @@ function plusDivs2(n) {
 
 function showDivs2(n) {
   var i;
-  var x = document.getElementsByClassName("slides2");
+  var x = document.getElementsByClassName("mySlides2");
   if (n > x.length) {
     slideIndex2 = 1;
   }
