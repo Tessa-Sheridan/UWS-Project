@@ -27,6 +27,8 @@ hambX.addEventListener("click", (e) => {
   }
 });
 
+//slides
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
