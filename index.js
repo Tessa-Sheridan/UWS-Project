@@ -1,26 +1,26 @@
 "use strict";
 
 const menuToggle = document.querySelector(".mobile-menu");
-const bxMenu = document.querySelector(".bx-menu");
-const bxX = document.querySelector(".bx-x");
+const hambMenu = document.querySelector(".bx-menu");
+const hambX = document.querySelector(".bx-x");
 const navBar = document.querySelector(".navbar");
 
 // open 
 
-bxMenu.addEventListener("click", (e) => {
+hambMenu.addEventListener("click", (e) => {
   if (e.target.classList.contains("bx-menu")) {
     navBar.classList.add("show-navbar");
-    bxMenu.classList.add("hide-bx");
-    bxX.classList.add("show-bx");
+    hambMenu.classList.add("hide-bx");
+    hambX.classList.add("show-bx");
   }
 });
 
 // close 
 
-bxX.addEventListener("click", (e) => {
+hambX.addEventListener("click", (e) => {
   if (e.target.classList.contains("bx-x")) {
     navBar.classList.remove("show-navbar");
-    bxMenu.classList.remove("hide-bx");
-    bxX.classList.remove("show-bx");
+    hambMenu.classList.remove("hide-bx");
+    hambX.classList.remove("show-bx");
   }
 });
